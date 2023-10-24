@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { caveat } from "./font";
 import "./globals.css";
+import Navbar from "./components/Navbar/Nav";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={caveat.className}>
-        <div className="min-h-screen overflow-hidden">{children}</div>
+        <div className="min-h-screen overflow-hidden">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
