@@ -8,7 +8,6 @@ import four from "public/svg/12.svg";
 import five from "public/svg/13.svg";
 import six from "public/svg/14.svg";
 import Image from "next/image";
-import { nothing } from "@/app/font";
 import Animation from "../Animation";
 
 const Hero = () => {
