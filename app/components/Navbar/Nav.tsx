@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import { Navbar, Typography } from "@material-tailwind/react";
 import Header from "../header";
 import Link from "next/link";
 import { navItems } from "./NavLinks";
@@ -17,12 +16,7 @@ function NavList() {
     <ul className="my-2 flex flex-col gap-2 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-6">
       {navItems &&
         navItems.map((nav, index) => (
-          <Typography
-            key={nav.href}
-            as="li"
-            variant="small"
-            color="blue-gray"
-            className="p-1 font-medium">
+          <li key={nav.href} className="p-1 font-medium">
             <motion.div
               initial="hidden"
               animate={controls}
@@ -42,7 +36,7 @@ function NavList() {
                 {nav.title}
               </Link>
             </motion.div>
-          </Typography>
+          </li>
         ))}
     </ul>
   );
