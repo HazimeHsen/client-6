@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { caveat } from "./font";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Nav";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
