@@ -94,7 +94,7 @@ export default function Nav() {
           }}
           transition={{ duration: 0.4, delay: 1.7 }}
           className="md:hidden block relative z-50">
-          <Header />
+          hh
         </motion.div>
       </div>
     </Navbar>
