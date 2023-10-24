@@ -8,7 +8,7 @@ import six from "public/svg/14.svg";
 
 import Image from "next/image";
 const index = () => {
-  return <div className=""></div>;
+  return <div className="">jj</div>;
 };
 
 export default index;

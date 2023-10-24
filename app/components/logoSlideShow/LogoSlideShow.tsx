@@ -7,16 +7,6 @@ const LogoSlideShow = () => {
     <div id="ourwork" className="">
       <Animation
         animationType="fade-bottom"
-        className="flex justify-center flex-col items-center">
-        <h1 className="text-4xl font-bold md:w-full w-72 flex justify-center text-purple-800 text-center">
-          Who We Have Worked With
-        </h1>
-        <div className="flex justify-center">
-          <span className="bg-purple-800 w-[80px] h-[3px] flex justify-center my-3"></span>
-        </div>
-      </Animation>
-      <Animation
-        animationType="fade-bottom"
         className="flex overflow-hidden slideshow">
         <div className="ml-4 flex justify-center gap-4 logos-slide-container">
           <div className="logos-slide img !w-[200px] ">
