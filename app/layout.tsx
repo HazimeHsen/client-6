@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { caveat } from "./font";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -16,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={caveat.className}>
+      <body>
         <div className="min-h-screen overflow-hidden">
           <Navbar />
           {children}
