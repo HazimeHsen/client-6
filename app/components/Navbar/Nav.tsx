@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { Navbar, Typography } from "@material-tailwind/react";
+import Header from "../header";
 import Link from "next/link";
 import { navItems } from "./NavLinks";
 import Animation from "../Animation";
@@ -93,7 +94,7 @@ export default function Nav() {
           }}
           transition={{ duration: 0.4, delay: 1.7 }}
           className="md:hidden block relative z-50">
-          hh
+          <Header />
         </motion.div>
       </div>
     </Navbar>
