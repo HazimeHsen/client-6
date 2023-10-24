@@ -1,0 +1,11 @@
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide-shadow {
+  background: transparent !important;
+}
+.swiper-cards {
+  overflow: hidden !important;
+}
