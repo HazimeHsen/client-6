@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import { Navbar, Typography } from "@material-tailwind/react";
-import Header from "../header";
 import Link from "next/link";
 import { navItems } from "./NavLinks";
 import Animation from "../Animation";
