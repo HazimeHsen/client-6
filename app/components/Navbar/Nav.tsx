@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import { Navbar, Typography } from "@material-tailwind/react";
 import Link from "next/link";
 import { navItems } from "./NavLinks";
-import Animation from "../Animation";
 import { motion, useAnimation } from "framer-motion";
 function NavList() {
   const controls = useAnimation();
@@ -48,23 +47,11 @@ function NavList() {
 }
 
 export default function Nav() {
-  const [openNav, setOpenNav] = React.useState(false);
   const controls = useAnimation();
 
   useEffect(() => {
     controls.start("visible");
   }, [controls]);
-
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
 
   return (
     <Navbar className="relative bg-transparent mx-auto max-w-screen-xl px-8 py-5">
