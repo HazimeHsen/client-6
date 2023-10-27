@@ -31,18 +31,18 @@ const Card = ({
         hidden: { opacity: 0, y: 50 },
       }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col md:flex-row  mb-8 px-3"
+      className="flex flex-col md:flex-row mb-8 px-3"
       key={info.title}>
       <div className="w-full ">
         <div className="flex">
           <Image
-            className="-mt-[20px]"
+            className="-mt-[20px] !md:w-[60px] !md:max-h-[60px]"
             src={info.image}
             width={60}
             height={60}
             alt={info.title}
           />{" "}
-          <h1 className="font-extrabold text-pink-400 text-xl md:text-3xl underline mb-4">
+          <h1 className="font-extrabold whitespace-nowrap text-pink-400 text-xl md:text-2xl underline mb-4">
             {info.title}:
           </h1>
         </div>
