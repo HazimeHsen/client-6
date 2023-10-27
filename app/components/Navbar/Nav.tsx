@@ -5,6 +5,7 @@ import Link from "next/link";
 import { navItems } from "./NavLinks";
 import Animation from "../Animation";
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 function NavList() {
   const controls = useAnimation();
   const parentDelay = 1.5;
@@ -28,11 +29,11 @@ function NavList() {
                 duration: 0.2,
                 delay: parentDelay + 0.1 * index + 0.2,
               }}
-              className="cursor-pointer font-semibold hover:text-gray-600 transition"
+              className="cursor-pointer font-semibold transition"
               key={index}>
               <Link
                 href={nav.href}
-                className="flex text-lg items-center hover:text-pink-500 transition-colors">
+                className="flex text-lg items-center text-customColor1 hover:text-primary transition-all duration-300">
                 {nav.title}
               </Link>
             </motion.div>
@@ -62,7 +63,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <div className="relative bg-transparent mx-auto max-w-screen-xl px-8 py-5">
+    <div className="relative bg-customColor2 mx-auto max-w-screen-xl px-8 py-5">
       <div className="flex items-center justify-between ">
         <motion.div
           initial="hidden"
@@ -73,7 +74,13 @@ export default function Nav() {
           }}
           className="text-4xl"
           transition={{ duration: 0.4, delay: 1.5 }}>
-          Logo
+          <Image
+            className=""
+            alt=""
+            src="/image/logo-nobg.png"
+            width={140}
+            height={330}
+          />
         </motion.div>
         <div className="hidden md:block">
           <NavList />

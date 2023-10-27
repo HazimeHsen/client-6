@@ -52,11 +52,11 @@ const WhatWeDo = () => {
         <div className="w-full flex justify-center py-5">
           <div className="max-w-4xl w-full">
             <div>
-              <h1 className="text-4xl font-bold text-purple-800 text-center w-full">
+              <h1 className="text-4xl font-bold text-primary text-center w-full">
                 Our Expertise
               </h1>
               <div className="flex justify-center">
-                <span className="bg-purple-800 w-[80px] h-[3px] flex justify-center mb-8 mt-3"></span>
+                <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-8 mt-3"></span>
               </div>
             </div>
             <div className="flex justify-center w-full">

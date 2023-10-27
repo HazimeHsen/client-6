@@ -42,12 +42,12 @@ const Card = ({
             height={60}
             alt={info.title}
           />{" "}
-          <div className="font-extrabold text-2xl underline justify-start text-purple-800 mb-4">
+          <h1 className="font-extrabold text-xl md:text-3xl underline mb-4">
             {info.title}:
-          </div>
+          </h1>
         </h2>
-        <div className="font-semibold pl-8">
-          <div className="mb-2 text-lg ">{info.text}</div>
+        <div className="pl-8">
+          <div className="mb-2 md:text-lg text-gray-600">{info.text}</div>
         </div>
       </div>
     </motion.div>
