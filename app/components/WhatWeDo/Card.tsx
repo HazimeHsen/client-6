@@ -34,17 +34,19 @@ const Card = ({
       className="flex flex-col md:flex-row mb-8 px-3"
       key={info.title}>
       <div className="w-full ">
-        <div className="flex">
+        <div className="flex items-center">
           <Image
-            className="-mt-[20px] !md:w-[60px] !md:max-h-[60px]"
+            className="-mt-5"
             src={info.image}
             width={60}
             height={60}
             alt={info.title}
           />{" "}
-          <h1 className="font-extrabold md:whitespace-nowrap text-pink-400 text-lg md:text-2xl underline mb-4">
-            {info.title}:
-          </h1>
+          <div>
+            <h1 className="font-extrabold md:whitespace-nowrap text-pink-400 text-lg md:text-2xl underline mb-4">
+              {info.title}:
+            </h1>
+          </div>
         </div>
         <div className="pl-8">
           <div className="mb-2 md:text-lg text-gray-600">{info.text}</div>
