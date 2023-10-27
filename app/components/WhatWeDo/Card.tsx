@@ -42,7 +42,7 @@ const Card = ({
             height={60}
             alt={info.title}
           />{" "}
-          <h1 className="font-extrabold whitespace-nowrap text-pink-400 text-xl md:text-2xl underline mb-4">
+          <h1 className="font-extrabold md:whitespace-nowrap text-pink-400 text-xl md:text-2xl underline mb-4">
             {info.title}:
           </h1>
         </div>
