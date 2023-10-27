@@ -12,8 +12,8 @@ const Card = ({
 }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger the animation once
-    threshold: 0.2, // Percentage of the element in view
+    triggerOnce: true,
+    threshold: 0.3,
   });
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const Card = ({
       className="flex flex-col md:flex-row  mb-8 px-3"
       key={info.title}>
       <div className="w-full ">
-        <h2 className="flex">
+        <div className="flex">
           <Image
             className="-mt-[20px]"
             src={info.image}
@@ -42,10 +42,10 @@ const Card = ({
             height={60}
             alt={info.title}
           />{" "}
-          <h1 className="font-extrabold text-xl md:text-3xl underline mb-4">
+          <h1 className="font-extrabold text-pink-400 text-xl md:text-3xl underline mb-4">
             {info.title}:
           </h1>
-        </h2>
+        </div>
         <div className="pl-8">
           <div className="mb-2 md:text-lg text-gray-600">{info.text}</div>
         </div>

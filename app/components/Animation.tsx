@@ -9,6 +9,7 @@ interface AnimatedOnInViewProps {
   startInView?: boolean;
   duration?: number;
   threshold?: number;
+  className?: string;
   animationType?:
     | "fade-left"
     | "fade-right"
@@ -16,7 +17,6 @@ interface AnimatedOnInViewProps {
     | "fade"
     | "fade-bottom"
     | "width-increase";
-  className?: string;
 }
 
 const Animation: React.FC<AnimatedOnInViewProps> = ({

@@ -1,3 +1,4 @@
+import Free from "./components/Free";
 import Hero from "./components/Hero";
 import IconsEveryWhere from "./components/IconsEveryWhere";
 import WhatWeDo from "./components/WhatWeDo/WhatWeDo";
@@ -9,7 +10,7 @@ export default function Home() {
       <Hero />
       <LogoSlideShow />
       <WhatWeDo />
-      <IconsEveryWhere />
+      <Free />
     </div>
   );
 }

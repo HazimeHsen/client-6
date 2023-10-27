@@ -63,7 +63,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <div className="relative bg-customColor2 mx-auto max-w-screen-xl px-8 py-5">
+    <div className="absolute top-0 left-0 w-full z-10 px-4 md:px-8 py-5">
       <div className="flex items-center justify-between ">
         <motion.div
           initial="hidden"

@@ -22,9 +22,11 @@ export default function Home() {
             onClick={() => {
               setIsActive(!isActive);
             }}
-            className={styles.button}>
+            className={`${styles.button} bg-transparent`}>
             <div
-              className={`${styles.burger} ${
+              className={`${
+                styles.burger
+              } after:bg-customColor1 before:bg-customColor1 ${
                 isActive ? styles.burgerActive : ""
               }`}></div>
           </div>

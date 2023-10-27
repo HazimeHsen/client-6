@@ -17,7 +17,7 @@ export default function Header() {
       initial="initial"
       animate="enter"
       exit="exit"
-      className={styles.menu}>
+      className={`${styles.menu} bg-secondary`}>
       <div className={styles.body}>
         <div
           onMouseLeave={() => {

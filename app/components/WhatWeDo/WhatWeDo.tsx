@@ -26,8 +26,8 @@ const WhatWeDo = () => {
 
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger the animation once
-    threshold: 0, // Percentage of the element in view
+    triggerOnce: true,
+    threshold: 0.3,
   });
 
   useEffect(() => {
