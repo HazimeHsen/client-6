@@ -78,7 +78,7 @@ const Flavors = () => {
           </Animation>
           <div className="w-full mb-24 md:min-w-[300px] lg:min-w-[450px] md:text-start text-center">
             <h1 className="text-2xl font-bold mb-2 text-customColor1 flex justify-center max-w-sm text-center uppercase mx-auto">
-              Meet the dessert that's causing a worldwide sensation
+              Meet the dessert that&rsquo;s causing a worldwide sensation
             </h1>
           </div>
         </div>
