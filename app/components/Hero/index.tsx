@@ -38,7 +38,7 @@ const Hero = () => {
               Gems
             </Animation>
           </h1>
-          <p className="text-xl flex flex-wrap text-center md:justify-start justify-center text-customColor1">
+          <p className="text-xl max-w-[300px] mx-auto md:mx-0 flex flex-wrap text-center md:justify-start justify-center text-customColor1">
             <Animation
               startInView={false}
               duration={0.6}

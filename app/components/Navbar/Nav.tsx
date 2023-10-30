@@ -74,13 +74,15 @@ export default function Nav() {
           }}
           className="text-4xl"
           transition={{ duration: 0.4, delay: 0.4 }}>
-          <Image
-            className=""
-            alt=""
-            src="/image/logo-nobg.png"
-            width={140}
-            height={330}
-          />
+          <Link href="/">
+            <Image
+              className=""
+              alt=""
+              src="/image/logo-nobg.png"
+              width={140}
+              height={330}
+            />
+          </Link>
         </motion.div>
         <div className="hidden md:block">
           <NavList />
