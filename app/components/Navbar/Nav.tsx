@@ -73,7 +73,7 @@ export default function Nav() {
             hidden: { opacity: 0, x: -300 },
           }}
           className="text-4xl"
-          transition={{ duration: 0.4, delay: 1.5 }}>
+          transition={{ duration: 0.4, delay: 0.4 }}>
           <Image
             className=""
             alt=""
@@ -93,7 +93,7 @@ export default function Nav() {
             visible: { opacity: 1, x: 0 },
             hidden: { opacity: 0, x: 300 },
           }}
-          transition={{ duration: 0.4, delay: 1.7 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
           className="md:hidden block relative z-50">
           <Header />
         </motion.div>

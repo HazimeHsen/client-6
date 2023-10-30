@@ -4,15 +4,15 @@ export const navItems = [
     href: "/",
   },
   {
-    title: "Work",
-    href: "/work",
+    title: "Free",
+    href: "/free",
   },
   {
     title: "About",
     href: "/about",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Flavors",
+    href: "/flavors",
   },
 ];

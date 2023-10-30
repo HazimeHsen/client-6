@@ -113,11 +113,12 @@ const Hero = () => {
         </div>
         <Animation
           startInView={false}
+          delay={1.5}
           animationType="width-increase"
           className="relative z-0 md:max-w-[300px] md:max-h-[300px] w-[250px] h-[250px] origin-center">
           <Image
             alt=""
-            className="ml-1"
+            className="mx-auto"
             src="/image/submark-nobg.png"
             width={300}
             height={300}

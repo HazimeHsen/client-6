@@ -2,10 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
-        <div className="flex flex-col sm:flex-row items-center justify-between">
+    <footer className="relative">
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8  bg-customColor2">
+        <div className="bg-customColor2 w-screen h-[2000px] rounded-[200px] absolute -z-10 left-0 -top-[200px]"></div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-between ">
           <span className="text-sm text-gray-500 sm:text-center ">
             © 2023{" "}
             <a href="https://flowbite.com/" className="hover:underline">

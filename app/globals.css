@@ -12,3 +12,13 @@ h1{
     margin: 0;
     padding: 0;
 }
+
+.card-shadow {
+    box-shadow: 0px 23px 46px 29px rgba(0,0,0,0.1);
+}
+
+.two-columns {
+    column-count: 2;
+    /* Optionally, you can add other styles for spacing and width */
+    width: 300px; /* Set the width of the container as needed */
+  }
