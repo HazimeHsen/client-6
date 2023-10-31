@@ -53,7 +53,7 @@ const Animation: React.FC<AnimatedOnInViewProps> = ({
     },
     "fade-bottom": {
       visible: { opacity: 1, y: 0 },
-      hidden: { opacity: 0, y: 50 },
+      hidden: { opacity: 0, y: 70 },
     },
     "width-increase": {
       visible: { opacity: 1, width: "100%" },

@@ -148,7 +148,7 @@ const Flavors = () => {
   return (
     <>
       <div className="bg-[#feeff7] pt-20">
-        <div className="flex justify-center ">
+        <Animation delay={0.5} className="flex justify-center ">
           <Image
             src="/image/m-1.png"
             alt=""
@@ -157,8 +157,8 @@ const Flavors = () => {
             className="w-[240px] h-[130px] md:h-[150px] md:w-[300px] z-10"
             objectFit="cover"
           />
-        </div>
-        <div>
+        </Animation>
+        <Animation animationType="width-increase">
           <Image
             alt=""
             src="/image/m-2.png"
@@ -166,8 +166,8 @@ const Flavors = () => {
             height={200}
             className="absolute w-[100px] h-[150px] md:h-[250px] md:w-[170px] top-0 left-0 z-0"
           />
-        </div>
-        <div>
+        </Animation>
+        <Animation animationType="width-increase">
           <Image
             alt=""
             src="/image/m-4.png"
@@ -175,8 +175,8 @@ const Flavors = () => {
             height={200}
             className="absolute w-[100px] h-[70px] md:h-[150px] md:w-[170px] top-6 right-0 md:right-20 z-0"
           />
-        </div>
-        <div>
+        </Animation>
+        <Animation animationType="fade-right" delay={0.5}>
           <Image
             alt=""
             src="/image/m-5.png"
@@ -184,43 +184,52 @@ const Flavors = () => {
             height={200}
             className="absolute w-[200px] h-[270px] md:h-[400px] md:w-[300px] top-[400px] right-0 z-0"
           />
-        </div>
+        </Animation>
 
         <div className="text-[#af82ac] pb-20 pt-6 flex flex-col items-center justify-center text-center z-10 relative">
           {flavors.map((flavor, i) => (
             <div key={i} className="my-5">
-              <div className="font-extrabold mb-2">
+              <Animation
+                animationType="fade-bottom"
+                className="font-extrabold mb-2">
                 <h1 className="text-3xl">{flavor.name}</h1>
                 <h1 className="text-3xl">{flavor.price}</h1>
-              </div>
+              </Animation>
               <div>
                 {flavor.description.map((desc, i) => (
-                  <div key={i} className="line-height-1 mb-3">
+                  <Animation
+                    animationType="fade-bottom"
+                    key={i}
+                    className="line-height-1 mb-3">
                     <div className="text-xl font-semibold">{desc.title}</div>
                     <div className="-mt-2">{desc.desc}</div>
-                  </div>
+                  </Animation>
                 ))}
               </div>
             </div>
           ))}
         </div>
         <div className="relative">
-          <Image
-            alt=""
-            src="/image/menu-4.png"
-            width={200}
-            height={200}
-            className="absolute w-[300px] h-[570px] md:h-[1000px] md:w-[570px] bottom-0 left-0 z-0"
-          />
+          <Animation>
+            <Image
+              alt=""
+              src="/image/menu-4.png"
+              width={200}
+              height={200}
+              className="absolute w-[300px] h-[570px] md:h-[1000px] md:w-[570px] bottom-0 left-0 z-0"
+            />
+          </Animation>
         </div>
         <div className="relative">
-          <Image
-            alt=""
-            src="/image/menu-5.png"
-            width={200}
-            height={200}
-            className="absolute w-[200px] h-[570px] md:h-[700px] md:w-[270px] bottom-[450px] right-0 z-0"
-          />
+          <Animation>
+            <Image
+              alt=""
+              src="/image/menu-5.png"
+              width={200}
+              height={200}
+              className="absolute w-[200px] h-[570px] md:h-[700px] md:w-[270px] bottom-[450px] right-0 z-0"
+            />
+          </Animation>
         </div>
       </div>
     </>
