@@ -1,10 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import Header from "../header";
 import Link from "next/link";
 import { navItems } from "./NavLinks";
-import Animation from "../Animation";
-import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 function NavList() {
   const controls = useAnimation();

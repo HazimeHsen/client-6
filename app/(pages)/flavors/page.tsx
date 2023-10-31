@@ -158,7 +158,7 @@ const Flavors = () => {
             objectFit="cover"
           />
         </Animation>
-        <Animation animationType="width-increase">
+        <Animation animationType="fade">
           <Image
             alt=""
             src="/image/m-2.png"
@@ -167,7 +167,7 @@ const Flavors = () => {
             className="absolute w-[100px] h-[150px] md:h-[250px] md:w-[170px] top-0 left-0 z-0"
           />
         </Animation>
-        <Animation animationType="width-increase">
+        <Animation animationType="fade">
           <Image
             alt=""
             src="/image/m-4.png"
@@ -176,7 +176,7 @@ const Flavors = () => {
             className="absolute w-[100px] h-[70px] md:h-[150px] md:w-[170px] top-6 right-0 md:right-20 z-0"
           />
         </Animation>
-        <Animation animationType="fade-right">
+        <Animation animationType="fade">
           <Image
             alt=""
             src="/image/m-5.png"
