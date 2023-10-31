@@ -189,11 +189,11 @@ const Flavors = () => {
         <div className="text-[#af82ac] pb-20 pt-6 flex flex-col items-center justify-center text-center z-10 relative">
           {flavors.map((flavor, i) => (
             <div key={i} className="my-5">
-              <Animation
-                animationType="fade-bottom"
-                className="font-extrabold mb-2">
-                <h1 className="text-3xl">{flavor.name}</h1>
-                <h1 className="text-3xl">{flavor.price}</h1>
+              <Animation animationType="fade-bottom">
+                <div className="font-extrabold mb-2">
+                  <h1 className="text-3xl">{flavor.name}</h1>
+                  <h1 className="text-3xl">{flavor.price}</h1>
+                </div>
               </Animation>
               <div>
                 {flavor.description.map((desc, i) => (
@@ -201,8 +201,10 @@ const Flavors = () => {
                     animationType="fade-bottom"
                     key={i}
                     className="line-height-1 mb-3">
-                    <div className="text-xl font-semibold">{desc.title}</div>
-                    <div className="-mt-2">{desc.desc}</div>
+                    <div className="mb-3">
+                      <div className="text-xl font-semibold">{desc.title}</div>
+                      <div className="-mt-2">{desc.desc}</div>
+                    </div>
                   </Animation>
                 ))}
               </div>
@@ -210,7 +212,7 @@ const Flavors = () => {
           ))}
         </div>
         <div className="relative">
-          <Animation>
+          <Animation startInView={false}>
             <Image
               alt=""
               src="/image/menu-4.png"
@@ -221,7 +223,7 @@ const Flavors = () => {
           </Animation>
         </div>
         <div className="relative">
-          <Animation>
+          <Animation startInView={false}>
             <Image
               alt=""
               src="/image/menu-5.png"
