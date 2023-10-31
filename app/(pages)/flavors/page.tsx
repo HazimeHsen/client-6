@@ -148,7 +148,7 @@ const Flavors = () => {
   return (
     <>
       <div className="bg-[#feeff7] pt-20">
-        <Animation delay={0.5} className="flex justify-center ">
+        <Animation className="flex justify-center ">
           <Image
             src="/image/m-1.png"
             alt=""
@@ -176,7 +176,7 @@ const Flavors = () => {
             className="absolute w-[100px] h-[70px] md:h-[150px] md:w-[170px] top-6 right-0 md:right-20 z-0"
           />
         </Animation>
-        <Animation animationType="fade-right" delay={0.5}>
+        <Animation animationType="fade-right">
           <Image
             alt=""
             src="/image/m-5.png"
