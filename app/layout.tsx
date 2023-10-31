@@ -17,11 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={asapCondensed.className}>
-        <div className="min-h-screen overflow-hidden">
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+        <div className="min-h-screen overflow-hidden">{children}</div>
       </body>
     </html>
   );
