@@ -3,9 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="relative">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8  bg-customColor2">
-        <div className="bg-customColor2 w-screen h-[2000px] rounded-[200px] absolute -z-10 left-0 -top-[200px]"></div>
-
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="flex flex-col sm:flex-row items-center justify-between ">
           <span className="text-sm text-gray-500 sm:text-center ">
             © 2023{" "}

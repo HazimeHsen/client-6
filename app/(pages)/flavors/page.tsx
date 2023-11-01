@@ -154,7 +154,7 @@ const Flavors = () => {
             alt=""
             width={500}
             height={200}
-            className="w-[240px] h-[130px] md:h-[150px] md:w-[300px] z-10"
+            className="w-[200px] h-[110px] md:h-[150px] md:w-[300px] z-10"
             objectFit="cover"
           />
         </Animation>
