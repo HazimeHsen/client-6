@@ -310,7 +310,7 @@ const FlavorDesc = ({ desc }: { desc: { title: string; desc: string } }) => {
         visible: { opacity: 1, x: 0 },
         hidden: { opacity: 0, x: 100 },
       }}
-      transition={{ duration: 0.5, delay: 0.2 }}
+      transition={{ duration: 0.5 }}
       className="mb-3 w-fit list-disc">
       <div className="text-xl font-semibold">{desc.title}</div>
       <div className="-mt-2">{desc.desc}</div>
