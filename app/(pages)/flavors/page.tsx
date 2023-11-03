@@ -1,10 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import Animation from "@/app/components/Animation";
-
+interface Flavor {
+  name: string;
+  price: string;
+  description: { title: string; desc: string }[];
+}
 const Flavors = () => {
-  // Define the flavor data with ingredients
-  const flavors = [
+  const flavors: Flavor[] = [
     {
       name: "RUBYS MILKY",
       price: "S $6.00/L $7.00",
@@ -145,6 +151,18 @@ const Flavors = () => {
     },
   ];
 
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+    threshold: 0.2, // Percentage of the element in view
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <>
       <div className="bg-[#feeff7] text-[#9a3ca9] pt-20">
@@ -157,9 +175,18 @@ const Flavors = () => {
             className="w-[200px] h-[100px] md:h-[150px] md:w-[300px] z-10"
             objectFit="cover"
           />
-          <div className="font-semibold text-lg my-3">
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: 100 },
+            }}
+            transition={{ duration: 0.5 }}
+            className="font-semibold text-lg my-3">
             Please Explore Our Flavors
-          </div>
+          </motion.div>
         </Animation>
         <Animation animationType="fade">
           <Image
@@ -192,28 +219,7 @@ const Flavors = () => {
         <div className="flex justify-center">
           <div className=" pb-20 px-4 pt-6 grid grid-cols-1 md:grid-cols-2 gap-10  z-10 relative">
             {flavors.map((flavor, i) => (
-              <div key={i} className=" max-w-[330px]">
-                <Animation animationType="fade-bottom">
-                  <div className="font-extrabold mb-2 flex items-center justify-between">
-                    <h1 className="text-xl">{flavor.name}</h1>
-                    <h1 className="text-xl">{flavor.price}</h1>
-                  </div>
-                </Animation>
-                <ul className="pl-8">
-                  {flavor.description.map((desc, i) => (
-                    <li key={i} className="mb-3 w-fit list-disc">
-                      <Animation
-                        animationType="fade-bottom"
-                        className="line-height-1 mb-3">
-                        <div className="text-xl font-semibold">
-                          {desc.title}
-                        </div>
-                        <div className="-mt-2">{desc.desc}</div>
-                      </Animation>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <FlavorsCard flavor={flavor} i={i} key={i} />
             ))}
           </div>
         </div>
@@ -245,3 +251,69 @@ const Flavors = () => {
 };
 
 export default Flavors;
+
+const FlavorsCard = ({ flavor, i }: { flavor: Flavor; i: number }) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+    threshold: 0.2, // Percentage of the element in view
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <div className=" max-w-[330px]">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          visible: { opacity: 1, x: 0 },
+          hidden: { opacity: 0, x: 100 },
+        }}
+        transition={{ duration: 0.5 }}>
+        <div className="font-extrabold mb-2 flex items-center justify-between">
+          <h1 className="text-xl">{flavor.name}</h1>
+          <h1 className="text-xl">{flavor.price}</h1>
+        </div>
+      </motion.div>
+      <ul className="pl-8">
+        {flavor.description.map((desc, i) => (
+          <FlavorDesc key={i} desc={desc} />
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const FlavorDesc = ({ desc }: { desc: { title: string; desc: string } }) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+    threshold: 0.2, // Percentage of the element in view
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.li
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: 100 },
+      }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className="mb-3 w-fit list-disc">
+      <div className="text-xl font-semibold">{desc.title}</div>
+      <div className="-mt-2">{desc.desc}</div>
+    </motion.li>
+  );
+};
