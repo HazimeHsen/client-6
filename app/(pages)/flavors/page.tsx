@@ -185,10 +185,10 @@ const Flavors = () => {
             hidden: { opacity: 0, x: 100 },
           }}
           transition={{ duration: 0.5 }}
-          className="font-semibold px-6 text-[#9a3ca9] text-xl my-3">
+          className="font-semibold px-6 md:text-center text-[#9a3ca9] text-xl my-3">
           Please Explore Our Flavors
         </motion.div>
-        <Animation animationType="fade">
+        {/* <Animation animationType="fade">
           <Image
             alt=""
             src="/image/m-2.png"
@@ -214,7 +214,7 @@ const Flavors = () => {
             height={200}
             className="absolute w-[200px] h-[270px] md:h-[400px] md:w-[300px] top-[400px] right-0 z-0"
           />
-        </Animation>
+        </Animation> */}
 
         <div className="flex justify-center">
           <div className=" pb-20 px-4 pt-6 grid grid-cols-1 md:grid-cols-2 gap-10  z-10 relative">
@@ -223,7 +223,7 @@ const Flavors = () => {
             ))}
           </div>
         </div>
-        <div className="relative">
+        {/* <div className="relative">
           <Animation startInView={false}>
             <Image
               alt=""
@@ -244,7 +244,7 @@ const Flavors = () => {
               className="absolute w-[200px] h-[570px] md:h-[700px] md:w-[270px] bottom-[450px] right-0 z-0"
             />
           </Animation>
-        </div>
+        </div> */}
       </div>
     </>
   );
