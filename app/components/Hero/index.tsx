@@ -114,7 +114,7 @@ const Hero = () => {
         <Animation
           startInView={false}
           delay={1.5}
-          animationType="width-increase"
+          animationType="fade"
           className="relative z-0 md:max-w-[300px] md:max-h-[300px] w-[250px] h-[250px] origin-center">
           <Image
             alt=""

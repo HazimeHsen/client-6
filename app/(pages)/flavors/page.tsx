@@ -165,36 +165,36 @@ const Flavors = () => {
 
   return (
     <>
-      <div className="bg-[#feeff7] text-[#9a3ca9] pt-20">
+      <div className="bg-[#feeff7]  pt-14">
         <Animation className="flex justify-center flex-col items-center">
           <Image
             src="/image/m-1.png"
             alt=""
             width={500}
             height={200}
-            className="w-[200px] h-[100px] md:h-[150px] md:w-[300px] z-10"
+            className="ml-3 w-[180px] h-[90px] md:h-[150px] md:w-[300px] z-10"
             objectFit="cover"
           />
-          <motion.div
-            ref={ref}
-            initial="hidden"
-            animate={controls}
-            variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: 100 },
-            }}
-            transition={{ duration: 0.5 }}
-            className="font-semibold text-lg my-3">
-            Please Explore Our Flavors
-          </motion.div>
         </Animation>
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={{
+            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: 100 },
+          }}
+          transition={{ duration: 0.5 }}
+          className="font-semibold px-6 text-[#9a3ca9] text-xl my-3">
+          Please Explore Our Flavors
+        </motion.div>
         <Animation animationType="fade">
           <Image
             alt=""
             src="/image/m-2.png"
             width={200}
             height={200}
-            className="absolute w-[100px] h-[150px] md:h-[250px] md:w-[170px] top-0 left-0 z-0"
+            className="absolute w-[100px] h-[130px] md:h-[250px] md:w-[170px] top-0 left-0 z-0"
           />
         </Animation>
         <Animation animationType="fade">
@@ -275,12 +275,12 @@ const FlavorsCard = ({ flavor, i }: { flavor: Flavor; i: number }) => {
           hidden: { opacity: 0, x: 100 },
         }}
         transition={{ duration: 0.5 }}>
-        <div className="font-extrabold mb-2 flex items-center justify-between">
+        <div className="font-extrabold text-[#9a3ca9] mb-2 flex items-center justify-between">
           <h1 className="text-xl">{flavor.name}</h1>
           <h1 className="text-xl">{flavor.price}</h1>
         </div>
       </motion.div>
-      <ul className="pl-8">
+      <ul className="">
         {flavor.description.map((desc, i) => (
           <FlavorDesc key={i} desc={desc} />
         ))}
@@ -311,9 +311,9 @@ const FlavorDesc = ({ desc }: { desc: { title: string; desc: string } }) => {
         hidden: { opacity: 0, x: 100 },
       }}
       transition={{ duration: 0.5 }}
-      className="mb-3 w-fit list-disc">
-      <div className="text-xl font-semibold">{desc.title}</div>
-      <div className="-mt-2">{desc.desc}</div>
+      className="mb-3 w-fit  text-[#411747]">
+      <div className="text-xl font-semibold text-[#6f2979] ">{desc.title}</div>
+      <div className="-mt-2 text-[#411747]">{desc.desc}</div>
     </motion.li>
   );
 };
