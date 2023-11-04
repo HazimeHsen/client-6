@@ -5,9 +5,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="bg-customColor2 ">
+    <section className="bg-customColor2 min-h-screen">
       <Nav />
-      <div className="gap-16 pt-28 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <div className="gap-16 pt-28 md:pt-32 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
         <div className="font-light text-gray-500 sm:text-lg ">
           <h1 className="mb-4 text-4xl tracking-tight text-center lg:text-start w-full font-extrabold text-white">
             We did not reinvent the wheel
