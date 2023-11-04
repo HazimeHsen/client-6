@@ -223,7 +223,7 @@ const Flavors = () => {
         </Animation> */}
 
         <div className="flex justify-center">
-          <div className=" pb-20 px-4 pt-6 grid grid-cols-1 md:grid-cols-2 gap-10  z-10 relative">
+          <div className=" pb-20 px-4 pt-6 grid grid-cols-1 md:grid-cols-2 md:gap-20 gap-10 z-10 relative">
             {flavors.map((flavor, i) => (
               <FlavorsCard flavor={flavor} i={i} key={i} />
             ))}

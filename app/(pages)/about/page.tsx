@@ -1,14 +1,17 @@
+import Footer from "@/app/components/Footer";
+import Nav from "@/app/components/Navbar/Nav";
 import Image from "next/image";
 import React from "react";
 
 const About = () => {
   return (
-    <section className="bg-white ">
-      <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+    <section className="bg-customColor2 ">
+      <Nav />
+      <div className="gap-16 pt-28 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light text-gray-500 sm:text-lg ">
-          <h2 className="mb-4 text-4xl tracking-tight text-center lg:text-start w-full font-extrabold text-gray-900">
+          <h1 className="mb-4 text-4xl tracking-tight text-center lg:text-start w-full font-extrabold text-white">
             We did not reinvent the wheel
-          </h2>
+          </h1>
           <p className="mb-4">
             We are strategists, designers and developers. Innovators and problem
             solvers. Small enough to be simple and quick, but big enough to
@@ -38,6 +41,7 @@ const About = () => {
           />
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

@@ -28,7 +28,7 @@ const Free = () => {
               <Link
                 href="/free"
                 className="py-2 px-4 rounded-lg bg-primary text-customColor1 hover:bg-primary/80 transition-all duration-300 ">
-                Explore Our Flavors
+                How to Get Free Products
               </Link>
             </div>
           </Animation>
