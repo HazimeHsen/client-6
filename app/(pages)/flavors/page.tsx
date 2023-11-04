@@ -7,13 +7,15 @@ import Animation from "@/app/components/Animation";
 interface Flavor {
   name: string;
   price: string;
+  img: string;
   description: { title: string; desc: string }[];
 }
 const Flavors = () => {
   const flavors: Flavor[] = [
     {
       name: "RUBYS MILKY",
-      price: "S $6.00/L $7.00",
+      img: "/image/f-1.gif",
+      price: "$6.00/L $7.00",
       description: [
         {
           title: "THE CLASSIC",
@@ -51,7 +53,8 @@ const Flavors = () => {
     },
     {
       name: "RUBYS FRUITEA",
-      price: "S $5.00/L $6.00",
+      img: "/image/f-2.gif",
+      price: "$5.00/L $6.00",
       description: [
         {
           title: "PEACH PARADISE",
@@ -81,7 +84,8 @@ const Flavors = () => {
     },
     {
       name: "RUBYS ORIENTAL",
-      price: "S $7.00/L $8.00",
+      img: "/image/f-3.gif",
+      price: "$7.00/L $8.00",
       description: [
         {
           title: "KNEFE",
@@ -99,6 +103,7 @@ const Flavors = () => {
     },
     {
       name: "BUBBLES",
+      img: "/image/f-4.gif",
       price: "",
       description: [
         {
@@ -113,6 +118,7 @@ const Flavors = () => {
     },
     {
       name: "POPPINGS",
+      img: "/image/f-5.gif",
       price: "$0.3",
       description: [
         {
@@ -185,7 +191,7 @@ const Flavors = () => {
             hidden: { opacity: 0, x: 100 },
           }}
           transition={{ duration: 0.5 }}
-          className="font-semibold px-6 md:text-center text-[#9a3ca9] text-xl my-3">
+          className="font-semibold px-6 md:text-center text-[#53215a] text-xl my-3">
           Please Explore Our Flavors
         </motion.div>
         {/* <Animation animationType="fade">
@@ -275,9 +281,18 @@ const FlavorsCard = ({ flavor, i }: { flavor: Flavor; i: number }) => {
           hidden: { opacity: 0, x: 100 },
         }}
         transition={{ duration: 0.5 }}>
-        <div className="font-extrabold text-[#9a3ca9] mb-2 flex items-center justify-between">
-          <h1 className="text-xl">{flavor.name}</h1>
-          <h1 className="text-xl">{flavor.price}</h1>
+        <div className="flex items-center">
+          <Image
+            alt=""
+            width={45}
+            height={45}
+            className="-ml-5 -mt-3 mr-1"
+            src={flavor.img}
+          />
+          <div className="font-extrabold  w-full whitespace-nowrap text-[#9a3ca9] mb-2 flex items-center justify-between">
+            <h1 className="text-xl underline">{flavor.name}</h1>
+            <h1 className="text-md">{flavor.price}</h1>
+          </div>
         </div>
       </motion.div>
       <ul className="">
