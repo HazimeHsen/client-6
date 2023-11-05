@@ -7,7 +7,7 @@ const Flavors = () => {
     <div className="px-4 py-20">
       <Animation animationType="fade-bottom" className="">
         <h1 className="text-4xl font-extrabold text-primary text-center w-full">
-          Our Flavors
+          Our Menu
         </h1>
         <div className="flex justify-center">
           <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-5 md:mb-0 mt-3"></span>

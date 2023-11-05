@@ -10,8 +10,8 @@ const locations = {
 };
 const Location = () => {
   return (
-    <section className="text-gray-600 my-10 mb-[500px] mt-20 body-font relative">
-      <Animation animationType="fade-bottom" className="">
+    <section className="text-gray-600 md:mb-0 mb-[500px] my-10 mt-20 body-font relative">
+      <Animation animationType="fade-bottom" className="mb-5">
         <h1 className="text-4xl font-extrabold text-primary text-center w-full">
           Contact Us
         </h1>
@@ -19,7 +19,7 @@ const Location = () => {
           <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-5 md:mb-0 mt-3"></span>
         </div>
       </Animation>
-      <div className="relative h-[600px] inset-0">
+      <div className="relative mt-5 h-[600px] inset-0">
         <iframe
           width="100%"
           height="100%"
