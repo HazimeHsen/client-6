@@ -16,7 +16,6 @@ export default function Home() {
       <Hero />
       <LogoSlideShow />
       <WhatWeDo />
-      <Free />
       <Flavors />
       <OpeningHours />
       <Location />

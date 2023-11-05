@@ -53,7 +53,7 @@ const WhatWeDo = () => {
           <div className="max-w-4xl w-full">
             <div>
               <h1 className="text-4xl font-bold text-primary text-center w-full">
-                Our Expertise
+                About Us
               </h1>
               <div className="flex justify-center">
                 <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-8 mt-3"></span>
