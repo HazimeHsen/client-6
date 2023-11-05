@@ -42,21 +42,20 @@ const WhatWeDo = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div
-      id="ourwork"
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={{
-        visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 50 },
-      }}
-      transition={{ duration: 0.5 }}
-      className="">
+    <div id="about" className="">
       <div>
         <div className="w-full flex justify-center py-5">
           <div className="max-w-4xl w-full">
-            <div className="flex flex-col justify-center items-center">
+            <motion.div
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 50 },
+              }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col justify-center items-center">
               <h1 className="text-4xl font-bold text-primary text-center w-full">
                 About Us
               </h1>
@@ -72,7 +71,7 @@ const WhatWeDo = () => {
                 diversity and bringing the magic of boba tea to a wider audience
                 through strategic store locations.
               </p>
-            </div>
+            </motion.div>
             <div className="flex justify-center w-full">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {data.map((info) => (
@@ -83,7 +82,7 @@ const WhatWeDo = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
