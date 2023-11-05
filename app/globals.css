@@ -22,3 +22,7 @@ h1{
     /* Optionally, you can add other styles for spacing and width */
     width: 300px; /* Set the width of the container as needed */
   }
+  
+html {
+    scroll-behavior: smooth;
+  }

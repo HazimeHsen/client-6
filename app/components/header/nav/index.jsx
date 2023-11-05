@@ -7,7 +7,7 @@ import Link from "./Link";
 import Curve from "./Curve";
 import { navItems } from "../../Navbar/NavLinks";
 
-export default function Header() {
+export default function Header({ setIsActive, isActive }) {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
@@ -28,6 +28,8 @@ export default function Header() {
             return (
               <Link
                 key={index}
+                setIsActive={setIsActive}
+                isActiveLink={isActive}
                 data={{ ...data, index }}
                 isActive={selectedIndicator == data.href}
                 setSelectedIndicator={setSelectedIndicator}></Link>

@@ -1,21 +1,28 @@
-import Image from "next/image";
 import React from "react";
 import Animation from "../Animation";
-import Link from "next/link";
+import Image from "next/image";
 
-const Free = () => {
+const OpeningHours = () => {
   return (
-    <div className="bg-customColor2 px-4 py-10">
+    <div
+      style={{
+        backgroundImage: "url(/image/bg-5.png)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      id="openinghours"
+      className="py-10 px-4 my-10">
       <Animation animationType="fade-bottom" className="">
         <h1 className="text-4xl font-extrabold text-primary text-center w-full">
-          Promotions & Special Highlights
+          Opening Hours
         </h1>
         <div className="flex justify-center">
-          <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-8 md:mb-0 mt-3"></span>
+          <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-5 md:mb-0 mt-3"></span>
         </div>
       </Animation>
-      <div className="flex items-center md:flex-row flex-col justify-center gap-8">
-        <div className="md:max-w-[50%] text-white md:text-start text-center">
+      <div className="flex items-center md:flex-row flex-col justify-center gap-8 md:gap-28">
+        <div className="md:max-w-[50%] md:text-start text-center">
           <Animation className="" animationType="fade-left">
             <p className="text-lg text-gray-600 !max-w-md my-4">
               {" "}
@@ -24,27 +31,20 @@ const Free = () => {
               possimus maiores mollitia. Suscipit eligendi modi ducimus quidem
               enim nihil ut, hic numquam veniam laudantium.
             </p>
+            <div></div>
           </Animation>
         </div>
-        <div className="relative -ml-20 md:ml-0 md-mt-10">
+        <div className="">
           <Animation animationType="width-increase">
             <div>
               <Image
-                className="rotate-[15deg]"
+                className=""
                 alt=""
-                src="/image/cup-1.png"
-                width={150}
-                height={200}
-              />
-              <Image
-                className="rotate-[100deg] absolute -bottom-1/4 -right-[87%]"
-                alt=""
-                src="/image/cup-2.png"
-                width={150}
-                height={200}
+                src="/image/opening-hours.png"
+                width={250}
+                height={250}
               />
             </div>
-            <span className="absolute w-[300px] h-2 bg-black block blur-md"></span>
           </Animation>
         </div>
       </div>
@@ -52,4 +52,4 @@ const Free = () => {
   );
 };
 
-export default Free;
+export default OpeningHours;

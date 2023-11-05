@@ -32,7 +32,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
+      <AnimatePresence mode="wait">
+        {isActive && <Nav setIsActive={setIsActive} isActive={isActive} />}
+      </AnimatePresence>
     </>
   );
 }
