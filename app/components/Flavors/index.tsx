@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Flavors = () => {
   return (
-    <div className="px-4 py-20">
+    <div className="px-4 py-10 md:py-20">
       <Animation animationType="fade-bottom" className="">
         <h1 className="text-4xl font-extrabold text-primary text-center w-full">
           Our Menu

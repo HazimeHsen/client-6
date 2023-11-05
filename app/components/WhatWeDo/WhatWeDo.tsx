@@ -56,14 +56,14 @@ const WhatWeDo = () => {
       <div>
         <div className="w-full flex justify-center py-5">
           <div className="max-w-4xl w-full">
-            <div>
+            <div className="flex flex-col justify-center items-center">
               <h1 className="text-4xl font-bold text-primary text-center w-full">
                 About Us
               </h1>
               <div className="flex justify-center">
                 <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-2 mt-3"></span>
               </div>
-              <p className="text-gray-600 text-sm text-center max-w-lg mb-8 px-4">
+              <p className="text-gray-600 mt-auto w-full text-sm text-center max-w-lg mb-8 px-4">
                 Ruby is a boba tea brand inspired by Middle Eastern flavors and
                 traditions, aiming to make boba tea accessible and foster
                 cultural expansion. They offer a unique fusion of flavors and
