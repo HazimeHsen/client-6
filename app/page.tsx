@@ -14,10 +14,8 @@ export default function Home() {
     <div className="">
       <Nav />
       <Hero />
-      <LogoSlideShow />
-      <WhatWeDo />
       <Flavors />
-      <OpeningHours />
+      <WhatWeDo />
       <Location />
       <Footer />
     </div>

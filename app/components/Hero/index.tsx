@@ -17,104 +17,30 @@ const Hero = () => {
         <div className="w-full md:mb-0 mb-8 md:min-w-[300px] lg:min-w-[450px] md:text-start text-center">
           <h1 className="text-5xl font-bold mb-2 text-primary flex flex-wrap md:justify-start justify-center">
             <Animation
+              animationType="fade-bottom"
               startInView={false}
-              duration={0.6}
+              duration={0.4}
               delay={0}
               className="mr-3">
-              Dive
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={0.2}
-              className="mr-3">
-              For
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={0.4}
-              className="mr-3">
-              Gems
+              Dive For Gems
             </Animation>
           </h1>
-          <p className="text-xl max-w-[300px] mx-auto md:mx-0 flex flex-wrap text-center md:justify-start justify-center text-customColor1">
+          <p className="text-xl max-w-[300px] mx-auto md:mx-0 flex text-center md:justify-start justify-center text-customColor1">
             <Animation
+              animationType="fade-bottom"
               startInView={false}
-              duration={0.6}
-              delay={0.6}
+              duration={0.4}
+              delay={0.2}
               className="mr-2">
-              We
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={0.7}
-              className="mr-2">
-              offer
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={0.8}
-              className="mr-2">
-              a
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={0.9}
-              className="mr-2">
-              wide
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={1}
-              className="mr-2">
-              variety
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={1.1}
-              className="mr-2">
-              of
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={1.2}
-              className="mr-2">
-              drinks
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={1.3}
-              className="mr-2">
-              for
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={1.4}
-              className="mr-2">
-              every
-            </Animation>
-            <Animation
-              startInView={false}
-              duration={0.6}
-              delay={1.5}
-              className="mr-2">
-              occasion.
+              We offer a wide variety of drinks for every occasion.
             </Animation>
           </p>
         </div>
         <Animation
-          startInView={false}
-          delay={1.5}
           animationType="fade"
+          startInView={false}
+          duration={0.4}
+          delay={0.4}
           className="relative z-0 md:max-w-[300px] md:max-h-[300px] w-[250px] h-[250px] origin-center">
           <Image
             alt=""

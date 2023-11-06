@@ -10,7 +10,7 @@ const locations = {
 };
 const Location = () => {
   return (
-    <section className="text-gray-600 md:mb-0 mb-[500px] my-10 mt-20 body-font relative">
+    <section className="text-gray-600 md:mb-0 my-10 mt-20 body-font relative">
       <Animation animationType="fade-bottom" className="mb-5">
         <h1 className="text-4xl font-extrabold text-primary text-center w-full">
           Contact Us
@@ -19,7 +19,7 @@ const Location = () => {
           <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-5 md:mb-0 mt-3"></span>
         </div>
       </Animation>
-      <div className="relative mt-5 h-[250px] md:h-[600px] inset-0">
+      <div className="flex items-center md:flex-row px-5 flex-col">
         <iframe
           width="100%"
           height="100%"
@@ -28,9 +28,10 @@ const Location = () => {
           marginWidth={0}
           title="map"
           scrolling="no"
+          className="mt-5 md:w-[50%] w-280px  h-[250px] md:h-[500px]"
           src="https://maps.google.com/maps?width=100%&height=400&hl=en&q=lebanon,Beirut,Rawcheh Rocks+(Ruby)&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
-        <div className="md:absolute relative z-10 w-full md:top-0 md:left-0 px-5 md:py-24 mx-auto flex">
-          <div className="lg:w-1/3 md:max-w-sm bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full relative md:shadow-md">
+        <div className="z-10 w-full px-5 md:w-[50%] flex">
+          <div className="bg-white rounded-lg md:p-8 md:mt-0 mt-5 flex flex-col md:ml-auto w-full relative md:shadow-md">
             <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
               Feedback
             </h2>
