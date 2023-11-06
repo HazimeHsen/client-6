@@ -21,7 +21,7 @@ const OpeningHours = () => {
           <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-5 md:mb-0 mt-3"></span>
         </div>
       </Animation>
-      <div className="flex items-center md:flex-row flex-col justify-center gap-8 md:gap-28">
+      <div className="flex items-center md:flex-row flex-col justify-center md:gap-28">
         <div className="md:max-w-[50%] md:text-start text-center">
           <Animation className="" animationType="fade-left">
             <p className="text-lg text-gray-600 !max-w-md my-4">
@@ -35,8 +35,8 @@ const OpeningHours = () => {
           </Animation>
         </div>
         <div className="">
-          <Animation animationType="width-increase">
-            <div>
+          <Animation animationType="fade" className="">
+            <div className="md:w-[250px] w-[200px] ">
               <Image
                 className=""
                 alt=""

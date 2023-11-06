@@ -19,7 +19,7 @@ const Location = () => {
           <span className="bg-primary w-[80px] h-[3px] flex justify-center mb-5 md:mb-0 mt-3"></span>
         </div>
       </Animation>
-      <div className="relative mt-5 h-[600px] inset-0">
+      <div className="relative mt-5 h-[250px] md:h-[600px] inset-0">
         <iframe
           width="100%"
           height="100%"

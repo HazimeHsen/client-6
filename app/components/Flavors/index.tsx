@@ -27,14 +27,14 @@ const Flavors = () => {
               <Link
                 href="/flavors"
                 className="py-2 px-4 rounded-lg bg-primary text-customColor1 hover:bg-primary/80 transition-all duration-300 ">
-                Explore Our Flavors
+                Explore Our Menu
               </Link>
             </div>
           </Animation>
         </div>
         <div className="">
           <Animation animationType="width-increase">
-            <div>
+            <div className="md:w-[250px] w-[200px] ">
               <Image
                 className=""
                 alt=""

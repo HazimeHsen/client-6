@@ -159,7 +159,7 @@ const Flavors = () => {
 
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger the animation once
+    triggerOnce: false, // Only trigger the animation once
     threshold: 0.2, // Percentage of the element in view
   });
 
@@ -261,7 +261,7 @@ export default Flavors;
 const FlavorsCard = ({ flavor, i }: { flavor: Flavor; i: number }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger the animation once
+    triggerOnce: false, // Only trigger the animation once
     threshold: 0.2, // Percentage of the element in view
   });
 
@@ -307,7 +307,7 @@ const FlavorsCard = ({ flavor, i }: { flavor: Flavor; i: number }) => {
 const FlavorDesc = ({ desc }: { desc: { title: string; desc: string } }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger the animation once
+    triggerOnce: false, // Only trigger the animation once
     threshold: 0.2, // Percentage of the element in view
   });
 
