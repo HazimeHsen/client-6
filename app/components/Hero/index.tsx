@@ -13,35 +13,23 @@ import Animation from "../Animation";
 const Hero = () => {
   return (
     <div className={`h-screen bg-customColor2 relative`}>
-      <div className="container mx-auto flex md:flex-row flex-col justify-center items-center h-full">
+      <Animation
+        animationType="fade-bottom"
+        startInView={false}
+        duration={0.4}
+        delay={0}
+        className="container mx-auto flex md:flex-row flex-col justify-center items-center h-full">
         <div className="w-full md:mb-0 mb-8 md:min-w-[300px] lg:min-w-[450px] md:text-start text-center">
           <h1 className="text-5xl font-bold mb-2 text-primary flex flex-wrap md:justify-start justify-center">
-            <Animation
-              animationType="fade-bottom"
-              startInView={false}
-              duration={0.4}
-              delay={0}
-              className="mr-3">
-              Dive For Gems
-            </Animation>
+            <div className="mr-3">Dive For Gems</div>
           </h1>
           <p className="text-xl max-w-[300px] mx-auto md:mx-0 flex text-center md:justify-start justify-center text-customColor1">
-            <Animation
-              animationType="fade-bottom"
-              startInView={false}
-              duration={0.4}
-              delay={0.2}
-              className="mr-2">
+            <span className="mr-2">
               We offer a wide variety of drinks for every occasion.
-            </Animation>
+            </span>
           </p>
         </div>
-        <Animation
-          animationType="fade"
-          startInView={false}
-          duration={0.4}
-          delay={0.4}
-          className="relative z-0 md:max-w-[300px] md:max-h-[300px] w-[250px] h-[250px] origin-center">
+        <div className="relative z-0 md:max-w-[300px] md:max-h-[300px] w-[250px] h-[250px] origin-center">
           <Image
             alt=""
             className="mx-auto"
@@ -49,8 +37,8 @@ const Hero = () => {
             width={300}
             height={300}
           />
-        </Animation>
-      </div>
+        </div>
+      </Animation>
       <div className="w-screen absolute bottom-0">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path

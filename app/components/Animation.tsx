@@ -79,7 +79,7 @@ const Animation: React.FC<AnimatedOnInViewProps> = ({
   }, [startInView, inView, controls]);
 
   return (
-    <motion.span
+    <motion.div
       ref={ref}
       initial="hidden"
       animate={controls}
@@ -87,7 +87,7 @@ const Animation: React.FC<AnimatedOnInViewProps> = ({
       transition={transition}
       className={className}>
       {children}
-    </motion.span>
+    </motion.div>
   );
 };
 

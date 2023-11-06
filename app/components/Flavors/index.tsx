@@ -15,7 +15,7 @@ const Flavors = () => {
       </Animation>
       <div className="flex items-center flex-col justify-center ">
         <div className="md:max-w-[50%] md:text-start text-center">
-          <Animation className="" animationType="fade-left">
+          <Animation className="" animationType="fade-bottom">
             <p className="text-lg text-gray-600 text-center !max-w-md mb-5">
               {" "}
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -31,7 +31,7 @@ const Flavors = () => {
               className="max-w-xs  ring-2 ring-red-400 bg-white shadow-md rounded-lg"
               key={i}>
               <div className="p-5">
-                <div className="w-full p-5 relative h-[200px] rounded-lg">
+                <div className="w-full p-5 relative h-[160px] rounded-lg">
                   <Image
                     className="rounded-lg object-cover"
                     alt=""

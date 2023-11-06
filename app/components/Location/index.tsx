@@ -10,7 +10,7 @@ const locations = {
 };
 const Location = () => {
   return (
-    <section className="text-gray-600 md:mb-0 my-10 mt-20 body-font relative">
+    <section className="text-gray-600 md:mb-0 my-10 body-font relative">
       <Animation animationType="fade-bottom" className="mb-5">
         <h1 className="text-4xl font-extrabold text-primary text-center w-full">
           Contact Us
